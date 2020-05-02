@@ -1,0 +1,54 @@
+{
+	"publishedBy": "Kousik Rajendran",
+	"updatedOn": "2020-05-01T00:00:01.001Z",
+	"currency": "US Dollar",
+	"currencySymbol": "$",
+	"calculationType": "cummulative",
+	"discounts": [
+		{
+			"customerType": "Regular",
+			"type": "regular",
+			"slabs": [
+				{
+					"amountFrom": 0,
+					"amountTo": 5000,
+					"discountPercentage": 0
+				},
+				{
+					"amountFrom": 5000,
+					"amountTo": 10000,
+					"discountPercentage": 10
+				},
+				{
+					"amountFrom": 10000,
+					"discountPercentage": 20
+				}
+			]
+		},
+		{
+			"customerType": "Premium",
+			"type": "premium",
+			"slabs": [
+				{
+					"amountFrom": 0,
+					"amountTo": 4000,
+					"discountPercentage": 10
+				},
+				{
+					"amountFrom": 4000,
+					"amountTo": 8000,
+					"discountPercentage": 15
+				},
+				{
+					"amountFrom": 8000,
+					"amountTo": 12000,
+					"discountPercentage": 20
+				},
+				{
+					"amountFrom": 12000,
+					"discountPercentage": 30
+				}
+			]
+		}
+	]
+}
