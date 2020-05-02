@@ -41,7 +41,7 @@ class DiscountsServiceApplicationTests {
 			System.out.println("Bill Amount: $10000, Expected Value: $9500, Actual Value: " + discountedBillAmount);
 			assertEquals(9500, discountedBillAmount);
 			discountedBillAmount = dc.calculateDiscountedBillAmount("regular", 15000);
-			System.out.println("Bill Amount: $15000, Expected Value: $13600, Actual Value: " + discountedBillAmount);
+			System.out.println("Bill Amount: $15000, Expected Value: $13500, Actual Value: " + discountedBillAmount);
 			assertEquals(13500, discountedBillAmount);
 
 			// Testing for premium customer for given cases;
