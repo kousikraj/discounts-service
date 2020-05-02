@@ -9,9 +9,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.kousikrajendran.cdkglobal.exceptions.UnknownCustomerTypeException;
 
+/**
+ * The default test class; This is validating all the use-cases as given in the
+ * assignment document;
+ * 
+ * @author Kousik Rajendran
+ *
+ */
 @SpringBootTest
 class DiscountsServiceApplicationTests {
-	
+
 	private static DiscountCalculator dc;
 
 	@BeforeAll
@@ -21,11 +28,11 @@ class DiscountsServiceApplicationTests {
 	}
 
 	@Test
-	void contextLoads() {
+	void testScenariosFromTheAssignment() {
 		try {
 			System.out.println("\n\n**** TESTING DISCOUNT CALCULATOR FOR CDC GLOBAL ****\n");
 
-			//Testing for regular customer for given cases;
+			// Testing for regular customer for given cases;
 			System.out.println("Discount Calculation for 'Regular' Customer");
 			long discountedBillAmount = dc.calculateDiscountedBillAmount("regular", 5000);
 			System.out.println("Bill Amount: $5000, Expected Value: $5000, Actual Value: " + discountedBillAmount);
@@ -36,8 +43,8 @@ class DiscountsServiceApplicationTests {
 			discountedBillAmount = dc.calculateDiscountedBillAmount("regular", 15000);
 			System.out.println("Bill Amount: $15000, Expected Value: $13600, Actual Value: " + discountedBillAmount);
 			assertEquals(13500, discountedBillAmount);
-			
-			//Testing for premium customer for given cases;
+
+			// Testing for premium customer for given cases;
 			System.out.println("\nDiscount Calculation for 'Premium' Customer");
 			discountedBillAmount = dc.calculateDiscountedBillAmount("premium", 4000);
 			System.out.println("Bill Amount: $4000, Expected Value: $3600, Actual Value: " + discountedBillAmount);

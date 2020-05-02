@@ -9,7 +9,8 @@ public class DiscountsServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DiscountsServiceApplication.class, args);
 		try {
-
+			// The main method is calculating all the discount scenarios and printing the
+			// compared values in the console
 			DiscountCalculator dc = new DiscountCalculator();
 			System.out.println("\n\n**** DISCOUNT CALCULATOR FOR CDC GLOBAL ****\n");
 			System.out.println("Discount Calculation for 'Regular' Customer");
