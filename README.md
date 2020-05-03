@@ -1,4 +1,4 @@
-# CDK Global - Discount Calculator Service
+# CDKGlobal - Discount Calculator Service
 
 Assignment 1: This project is created based on specification document "ShoppingCart-CodingAssignment.pdf".
 
