@@ -48,7 +48,3 @@ mvn test
 4. Run `'java -jar target/discounts-service-0.0.1-SNAPSHOT.jar'` or `' mvn spring-boot:run'` for executing the jar
 
 All the above methods should compile successfully and provide the results of the test scenarios.
-
-### Author
-
-Kousik Rajendran, kousikraj@gmail.com, +91 9900486154
