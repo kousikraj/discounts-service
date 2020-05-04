@@ -12,7 +12,7 @@ public class DiscountsServiceApplication {
 			// The main method is calculating all the discount scenarios and printing the
 			// compared values in the console
 			DiscountCalculator dc = new DiscountCalculator();
-			System.out.println("\n\n**** DISCOUNT CALCULATOR FOR CDC GLOBAL ****\n");
+			System.out.println("\n\n**** DISCOUNT CALCULATOR FOR CDK GLOBAL ****\n");
 			System.out.println("Discount Calculation for 'Regular' Customer");
 			long discount = dc.calculateDiscountedBillAmount("regular", 5000);
 			System.out.println("Bill Amount: $5000, Discounted Amount: $" + discount);

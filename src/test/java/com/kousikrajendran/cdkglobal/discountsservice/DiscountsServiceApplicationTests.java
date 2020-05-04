@@ -30,7 +30,7 @@ class DiscountsServiceApplicationTests {
 	@Test
 	void testScenariosFromTheAssignment() {
 		try {
-			System.out.println("\n\n**** TESTING DISCOUNT CALCULATOR FOR CDC GLOBAL ****\n");
+			System.out.println("\n\n**** TESTING DISCOUNT CALCULATOR FOR CDK GLOBAL ****\n");
 
 			// Testing for regular customer for given cases;
 			System.out.println("Discount Calculation for 'Regular' Customer");
